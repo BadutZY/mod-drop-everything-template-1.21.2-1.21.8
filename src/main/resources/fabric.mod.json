@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "stackable-items",
+	"version": "1.0.0",
+	"name": "Stackable Items",
+	"description": "Make items stackable up to 64",
+	"authors": [
+		"BadutZY"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/user/BadutZY"
+	},
+	"license": "MIT",
+	"icon": "assets/stackablelitems/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.example.stackable.StackableTotem"
+		],
+		"fabric-datagen": [
+			"com.example.stackable.StackablelItemsDataGenerator"
+		]
+	},
+	"mixins": [
+		"stackablelitems.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "0.119.3"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
